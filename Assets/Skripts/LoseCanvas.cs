@@ -9,7 +9,7 @@ public class LoseCanvas : MonoBehaviour
     [SerializeField] private Button Restart;
     [SerializeField] private Button Quit;
     [SerializeField] private GameObject losePanel;
-    private void Start()
+    private void OnEnable()
     {
         Time.timeScale = 0f;
         Cursor.visible = true;

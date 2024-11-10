@@ -12,7 +12,7 @@ public class VictoryCanvas : MonoBehaviour
     [SerializeField] private Button Quit;
     [SerializeField] private GameObject victoryPanel;
     private int victoryCount;
-    private void Update()
+  /*  private void Update()
     {
         if (PlayerPrefs.GetInt("killCount") == 5)
         {
@@ -25,11 +25,24 @@ public class VictoryCanvas : MonoBehaviour
             PlayerPrefs.SetInt("victoryCount", victoryCount);
             winText.text = $"Win counter: {PlayerPrefs.GetInt("victoryCount")}";
             loseText.text = $"Lose counter: {PlayerPrefs.GetInt("MydeadCount")}";
-            victoryPanel.gameObject.SetActive(true);
+            victoryPanel.SetActive(true);
 
         }
         UnityEngine.Debug.Log("victoryCount: " + PlayerPrefs.GetInt("victoryCount"));
         UnityEngine.Debug.Log("MydeadCount: " + PlayerPrefs.GetInt("MydeadCount"));
+    }*/
+    public void VictoryPanel()
+    {
+        Time.timeScale = 0f;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        PlayerPrefs.SetInt("killCount", 0);
+        victoryCount++;
+        victoryCount += PlayerPrefs.GetInt("victoryCount");
+        PlayerPrefs.SetInt("victoryCount", victoryCount);
+        winText.text = $"Win counter: {PlayerPrefs.GetInt("victoryCount")}";
+        loseText.text = $"Lose counter: {PlayerPrefs.GetInt("MydeadCount")}";
+        victoryPanel.SetActive(true);
     }
     public void Res()
     {
