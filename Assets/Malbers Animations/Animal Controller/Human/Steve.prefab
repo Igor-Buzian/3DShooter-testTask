@@ -2909,7 +2909,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2612772571067396113, guid: 5150b221c7eed6c42a7b46ee90209efa, type: 3}
       propertyPath: Editor_Tabs1
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2612772571067396113, guid: 5150b221c7eed6c42a7b46ee90209efa, type: 3}
       propertyPath: LeftHandEquipPoint
@@ -3029,6 +3029,10 @@ PrefabInstance:
     - target: {fileID: 7202468289156060601, guid: 5150b221c7eed6c42a7b46ee90209efa, type: 3}
       propertyPath: m_RootOrder
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7629475385175981180, guid: 5150b221c7eed6c42a7b46ee90209efa, type: 3}
+      propertyPath: Editor_Tabs1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7629475385175981180, guid: 5150b221c7eed6c42a7b46ee90209efa, type: 3}
       propertyPath: AlignTime.ConstantValue

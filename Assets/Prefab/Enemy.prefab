@@ -842,7 +842,6 @@ GameObject:
   - component: {fileID: 2794102519638252226}
   - component: {fileID: 8081297921253966008}
   - component: {fileID: 8081297921253966007}
-  - component: {fileID: 8081297921253966005}
   - component: {fileID: 8081297921253966004}
   m_Layer: 0
   m_Name: Enemy
@@ -900,20 +899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83458b94418b26943ab895a0041050a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2.5
   youLosedPanel: {fileID: 0}
---- !u!114 &8081297921253966005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3282409293587906680}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d7c1d35d4db2e447a6e6afd9fc33f26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!143 &8081297921253966004
 CharacterController:
   m_ObjectHideFlags: 0
