@@ -2226,9 +2226,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7721b17458de7274da9fb6df12db1326, type: 3}
---- !u!4 &611510669 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4973453112627144, guid: 7721b17458de7274da9fb6df12db1326, type: 3}
+--- !u!20 &611510670 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 20092073445527294, guid: 7721b17458de7274da9fb6df12db1326, type: 3}
   m_PrefabInstance: {fileID: 611510668}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &618297402
@@ -2979,9 +2979,9 @@ Canvas:
   m_GameObject: {fileID: 768524900}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 611510670}
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -2989,7 +2989,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_TargetDisplay: 0
 --- !u!224 &768524904
 RectTransform:
@@ -3057,11 +3057,6 @@ Transform:
   m_Father: {fileID: 2928515076462915698}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &849058585 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4566762183731045176, guid: 2d4c8c4f2e5c4f24bb7c1c0e5e8eafc9, type: 3}
-  m_PrefabInstance: {fileID: 537448517}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &849058586 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4570553829634517058, guid: 2d4c8c4f2e5c4f24bb7c1c0e5e8eafc9, type: 3}
@@ -3873,7 +3868,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235266078}
   m_LocalRotation: {x: -0.77024364, y: 0.33444017, z: 0.44460434, w: 0.31177175}
-  m_LocalPosition: {x: -0.13, y: 0.03, z: 0.15}
+  m_LocalPosition: {x: -0.387, y: 0.019, z: -0.153}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4029,7 +4024,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1254213786
 Transform:
   m_ObjectHideFlags: 0
@@ -6164,7 +6159,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1710804850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6881,7 +6876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1930299462
 Transform:
   m_ObjectHideFlags: 0
@@ -14890,7 +14885,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6605041152016913576}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.9, y: 13.287, z: 46.1}
+  m_LocalPosition: {x: 19.9, y: 0.236, z: 46.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15824,8 +15819,7 @@ GameObject:
   - component: {fileID: 6605041152016913591}
   - component: {fileID: 6605041152016913590}
   - component: {fileID: 6605041152016913592}
-  - component: {fileID: 6605041152016913594}
-  - component: {fileID: 6605041152016913593}
+  - component: {fileID: 6605041152016913595}
   m_Layer: 20
   m_Name: Player
   m_TagString: Player
@@ -15883,11 +15877,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowOnPlay: 0
   PivotPosDir: 0
-  SelectedMode: 0
+  SelectedMode: -1
   SelectedState: 1
   SelectedStance: 0
   ShowStateInInspector: 1
-  Editor_Tabs1: 2
+  Editor_Tabs1: 1
   Editor_Tabs2: 4
   Mode_Tabs1: 1
   Ability_Tabs: 2
@@ -15953,469 +15947,7 @@ MonoBehaviour:
     states: []
     StateQueue: []
     DisableStances: []
-  modes:
-  - active: 1
-    ignoreLowerModes: 0
-    hasCoolDown: 0
-    Input: 
-    ID: {fileID: 11400000, guid: e359152068b217a4faa2410144e91b19, type: 2}
-    modifier: {fileID: 0}
-    CoolDown:
-      UseConstant: 1
-      ConstantValue: 0
-      Variable: {fileID: 0}
-    Abilities:
-    - active:
-        UseConstant: 1
-        ConstantValue: 1
-        Variable: {fileID: 0}
-      Name: AbilityName
-      Index:
-        UseConstant: 1
-        ConstantValue: 1
-        Variable: {fileID: 0}
-      Input:
-        UseConstant: 1
-        ConstantValue: 
-        Variable: {fileID: 0}
-      audioClip:
-        UseConstant: 1
-        ConstantValue: {fileID: 0}
-        Variable: {fileID: 0}
-      ClipDelay:
-        UseConstant: 1
-        ConstantValue: 0
-        Variable: {fileID: 0}
-      audioSource: {fileID: 0}
-      m_stopAudio: 1
-      modifier: {fileID: 0}
-      Limits:
-        affect: 1
-        affectStates:
-        - {fileID: 11400000, guid: 7370df9c769c2764381ad7c76eb3d949, type: 2}
-        - {fileID: 11400000, guid: 3787b6d94d5454740bf36d57436185b0, type: 2}
-        affect_Stance: 0
-        Stances: []
-        TransitionFrom: 
-      Status: 0
-      abilityTime:
-        UseConstant: 1
-        ConstantValue: 3
-        Variable: {fileID: 0}
-      ChargeCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      ChargeValue:
-        UseConstant: 1
-        ConstantValue: 1
-        Variable: {fileID: 0}
-      Release: 0
-      AdditivePosition: 1
-      AdditiveRotation: 1
-      IgnoreGrounded: 0
-      IgnoreGravity: 0
-      NoYMovement: 0
-      Persistent: 0
-      ReactEnter:
-        rid: -2
-      ReactExit:
-        rid: -2
-      OnEnter:
-        m_PersistentCalls:
-          m_Calls: []
-      OnExit:
-        m_PersistentCalls:
-          m_Calls: []
-      OnCharged:
-        m_PersistentCalls:
-          m_Calls: []
-    - active:
-        UseConstant: 1
-        ConstantValue: 1
-        Variable: {fileID: 0}
-      Name: Rifle Reload
-      Index:
-        UseConstant: 1
-        ConstantValue: 2
-        Variable: {fileID: 0}
-      Input:
-        UseConstant: 1
-        ConstantValue: 
-        Variable: {fileID: 0}
-      audioClip:
-        UseConstant: 1
-        ConstantValue: {fileID: 0}
-        Variable: {fileID: 0}
-      ClipDelay:
-        UseConstant: 1
-        ConstantValue: 0
-        Variable: {fileID: 0}
-      audioSource: {fileID: 0}
-      m_stopAudio: 1
-      modifier: {fileID: 0}
-      Limits:
-        affect: 1
-        affectStates:
-        - {fileID: 11400000, guid: 7370df9c769c2764381ad7c76eb3d949, type: 2}
-        - {fileID: 11400000, guid: 3787b6d94d5454740bf36d57436185b0, type: 2}
-        affect_Stance: 0
-        Stances: []
-        TransitionFrom: 
-      Status: 0
-      abilityTime:
-        UseConstant: 1
-        ConstantValue: 3
-        Variable: {fileID: 0}
-      ChargeCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      ChargeValue:
-        UseConstant: 1
-        ConstantValue: 1
-        Variable: {fileID: 0}
-      Release: 0
-      AdditivePosition: 1
-      AdditiveRotation: 1
-      IgnoreGrounded: 0
-      IgnoreGravity: 0
-      NoYMovement: 0
-      Persistent: 0
-      ReactEnter:
-        rid: -2
-      ReactExit:
-        rid: -2
-      OnEnter:
-        m_PersistentCalls:
-          m_Calls: []
-      OnExit:
-        m_PersistentCalls:
-          m_Calls: []
-      OnCharged:
-        m_PersistentCalls:
-          m_Calls: []
-    - active:
-        UseConstant: 1
-        ConstantValue: 1
-        Variable: {fileID: 0}
-      Name: Rifle Fire RH
-      Index:
-        UseConstant: 1
-        ConstantValue: 3
-        Variable: {fileID: 0}
-      Input:
-        UseConstant: 1
-        ConstantValue: 
-        Variable: {fileID: 0}
-      audioClip:
-        UseConstant: 1
-        ConstantValue: {fileID: 0}
-        Variable: {fileID: 0}
-      ClipDelay:
-        UseConstant: 1
-        ConstantValue: 0
-        Variable: {fileID: 0}
-      audioSource: {fileID: 0}
-      m_stopAudio: 1
-      modifier: {fileID: 0}
-      Limits:
-        affect: 1
-        affectStates:
-        - {fileID: 11400000, guid: 7370df9c769c2764381ad7c76eb3d949, type: 2}
-        - {fileID: 11400000, guid: 3787b6d94d5454740bf36d57436185b0, type: 2}
-        affect_Stance: 0
-        Stances: []
-        TransitionFrom: 
-      Status: 0
-      abilityTime:
-        UseConstant: 1
-        ConstantValue: 3
-        Variable: {fileID: 0}
-      ChargeCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      ChargeValue:
-        UseConstant: 1
-        ConstantValue: 1
-        Variable: {fileID: 0}
-      Release: 0
-      AdditivePosition: 1
-      AdditiveRotation: 1
-      IgnoreGrounded: 0
-      IgnoreGravity: 0
-      NoYMovement: 0
-      Persistent: 0
-      ReactEnter:
-        rid: -2
-      ReactExit:
-        rid: -2
-      OnEnter:
-        m_PersistentCalls:
-          m_Calls: []
-      OnExit:
-        m_PersistentCalls:
-          m_Calls: []
-      OnCharged:
-        m_PersistentCalls:
-          m_Calls: []
-    - active:
-        UseConstant: 1
-        ConstantValue: 1
-        Variable: {fileID: 0}
-      Name: Rifle Fire LH
-      Index:
-        UseConstant: 1
-        ConstantValue: 4
-        Variable: {fileID: 0}
-      Input:
-        UseConstant: 1
-        ConstantValue: 
-        Variable: {fileID: 0}
-      audioClip:
-        UseConstant: 1
-        ConstantValue: {fileID: 0}
-        Variable: {fileID: 0}
-      ClipDelay:
-        UseConstant: 1
-        ConstantValue: 0
-        Variable: {fileID: 0}
-      audioSource: {fileID: 0}
-      m_stopAudio: 1
-      modifier: {fileID: 0}
-      Limits:
-        affect: 1
-        affectStates:
-        - {fileID: 11400000, guid: 7370df9c769c2764381ad7c76eb3d949, type: 2}
-        - {fileID: 11400000, guid: 3787b6d94d5454740bf36d57436185b0, type: 2}
-        affect_Stance: 0
-        Stances: []
-        TransitionFrom: 
-      Status: 0
-      abilityTime:
-        UseConstant: 1
-        ConstantValue: 3
-        Variable: {fileID: 0}
-      ChargeCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      ChargeValue:
-        UseConstant: 1
-        ConstantValue: 1
-        Variable: {fileID: 0}
-      Release: 0
-      AdditivePosition: 1
-      AdditiveRotation: 1
-      IgnoreGrounded: 0
-      IgnoreGravity: 0
-      NoYMovement: 0
-      Persistent: 0
-      ReactEnter:
-        rid: -2
-      ReactExit:
-        rid: -2
-      OnEnter:
-        m_PersistentCalls:
-          m_Calls: []
-      OnExit:
-        m_PersistentCalls:
-          m_Calls: []
-      OnCharged:
-        m_PersistentCalls:
-          m_Calls: []
-    - active:
-        UseConstant: 1
-        ConstantValue: 1
-        Variable: {fileID: 0}
-      Name: Rifle Aim LH
-      Index:
-        UseConstant: 1
-        ConstantValue: 5
-        Variable: {fileID: 0}
-      Input:
-        UseConstant: 1
-        ConstantValue: 
-        Variable: {fileID: 0}
-      audioClip:
-        UseConstant: 1
-        ConstantValue: {fileID: 0}
-        Variable: {fileID: 0}
-      ClipDelay:
-        UseConstant: 1
-        ConstantValue: 0
-        Variable: {fileID: 0}
-      audioSource: {fileID: 0}
-      m_stopAudio: 1
-      modifier: {fileID: 0}
-      Limits:
-        affect: 1
-        affectStates:
-        - {fileID: 11400000, guid: 7370df9c769c2764381ad7c76eb3d949, type: 2}
-        - {fileID: 11400000, guid: 3787b6d94d5454740bf36d57436185b0, type: 2}
-        affect_Stance: 0
-        Stances: []
-        TransitionFrom: 
-      Status: 0
-      abilityTime:
-        UseConstant: 1
-        ConstantValue: 3
-        Variable: {fileID: 0}
-      ChargeCurve:
-        serializedVersion: 2
-        m_Curve:
-        - serializedVersion: 3
-          time: 0
-          value: 0
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-      ChargeValue:
-        UseConstant: 1
-        ConstantValue: 1
-        Variable: {fileID: 0}
-      Release: 0
-      AdditivePosition: 1
-      AdditiveRotation: 1
-      IgnoreGrounded: 0
-      IgnoreGravity: 0
-      NoYMovement: 0
-      Persistent: 0
-      ReactEnter:
-        rid: -2
-      ReactExit:
-        rid: -2
-      OnEnter:
-        m_PersistentCalls:
-          m_Calls: []
-      OnExit:
-        m_PersistentCalls:
-          m_Calls: []
-      OnCharged:
-        m_PersistentCalls:
-          m_Calls: []
-    m_AbilityIndex:
-      UseConstant: 1
-      ConstantValue: -99
-      Variable: {fileID: 0}
-    DefaultIndex:
-      UseConstant: 1
-      ConstantValue: 0
-      Variable: {fileID: 0}
-    OnAbilityIndex:
-      m_PersistentCalls:
-        m_Calls: []
-    ResetToDefault: 0
-    allowRotation: 0
-    allowMovement: 0
-    OnEnterMode:
-      m_PersistentCalls:
-        m_Calls: []
-    OnExitMode:
-      m_PersistentCalls:
-        m_Calls: []
-    OnEnterReaction:
-      rid: -2
-    OnExitReaction:
-      rid: -2
-    m_Source: {fileID: 0}
-    ActivationTime: 0
+  modes: []
   CloneStates: 1
   OverrideStartState: {fileID: 0}
   groundLayer:
@@ -16551,7 +16083,7 @@ MonoBehaviour:
     UseConstant: 1
     ConstantValue: 5
     Variable: {fileID: 0}
-  Aimer: {fileID: 6605041152016913593}
+  Aimer: {fileID: 0}
   pivots:
   - name: Chest
     position: {x: 0, y: 0.49998093, z: 0}
@@ -16937,9 +16469,7 @@ MonoBehaviour:
   m_Strafe: Strafe
   references:
     version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
+    RefIds: []
 --- !u!114 &6605041152016913591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17182,7 +16712,7 @@ CapsuleCollider:
   m_Height: 1.7745018
   m_Direction: 1
   m_Center: {x: 0, y: 0.8777313, z: 0.04730797}
---- !u!114 &6605041152016913593
+--- !u!114 &6605041152016913595
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17191,246 +16721,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6605041152016913576}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cf9548d1f32af143802e526c7043914, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a46a7eb93ea8794bbfb6a8962b14de7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_active:
-    UseConstant: 1
-    ConstantValue: 1
-    Variable: {fileID: 0}
-  m_aimOrigin: {fileID: 5828222252134321682}
-  m_Smoothness: 10
-  m_aimLayer:
-    UseConstant: 1
-    ConstantValue:
-      serializedVersion: 2
-      m_Bits: 4294967295
-    Variable: {fileID: 0}
-  m_Triggers: 1
-  m_AimTarget:
-    UseConstant: 1
-    ConstantValue: {fileID: 1235266079}
-    Variable: {fileID: 0}
-  m_AimPosition:
-    UseConstant: 1
-    ConstantValue: {fileID: 0}
-    Variable: {fileID: 0}
-  m_Ignore:
-    UseConstant: 1
-    ConstantValue: {fileID: 0}
-    Variable: {fileID: 0}
-  m_camera:
-    UseConstant: 1
-    ConstantValue: {fileID: 611510669}
-    Variable: {fileID: 0}
-  m_forwardCam:
-    UseConstant: 1
-    ConstantValue: 0.2
-    Variable: {fileID: 0}
-  m_cycles: 1
-  m_screenCenter:
-    UseConstant: 1
-    ConstantValue: {x: 0.5, y: 0.5}
-    Variable: {fileID: 0}
-  m_UseCamera:
-    UseConstant: 1
-    ConstantValue: 1
-    Variable: {fileID: 0}
-  m_AimSide: 0
-  updateMode: 1
-  MaxDistance: 100
-  m_UseRaycasting:
-    UseConstant: 1
-    ConstantValue: 1
-    Variable: {fileID: 0}
-  rayRadius:
-    UseConstant: 1
-    ConstantValue: 0
-    Variable: {fileID: 0}
-  RayHits: 5
-  OnAimRayTarget:
-    m_PersistentCalls:
-      m_Calls: []
-  OnScreenCenter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnAimSide:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 1eadc0ff250263642ad75526ef2b828e, type: 2}
-        m_TargetAssemblyTypeName: MalbersAnimations.Events.MEvent, MalbersAnimations
-        m_MethodName: Invoke
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnAiming:
-    m_PersistentCalls:
-      m_Calls: []
-  OnUsingTarget:
-    m_PersistentCalls:
-      m_Calls: []
-  OnHit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnSetTarget:
-    m_PersistentCalls:
-      m_Calls: []
-  OnClearTarget:
-    m_PersistentCalls:
-      m_Calls: []
-  debug: 0
-  m_Animator: {fileID: 0}
-  m_AimHorizontal: AimHorizontal
-  m_AimVertical: AimVertical
-  AngleLerp:
-    UseConstant: 1
-    ConstantValue: 0
-    Variable: {fileID: 0}
-  EditorTab1: 0
---- !u!114 &6605041152016913594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6605041152016913576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 580e703fe3c4ea64a855a7104b1d92f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ExitByMode: 0
-  SmoothEquip: 0
-  UseWeaponsOnlyWhileRiding: 1
-  animal: {fileID: 6605041152016913590}
-  DropPoint: {fileID: 0}
-  DrawWeaponModeID: {fileID: 11400000, guid: 25a9ab75d9646144eaa77342296c549c, type: 2}
-  StoreWeaponModeID: {fileID: 11400000, guid: 908d4f1fe671c064cbb3045eeb113742, type: 2}
-  UnarmedModeID: {fileID: 11400000, guid: 1286867ad3c4cdd4baacac3373aff92c, type: 2}
-  comboManager: {fileID: 0}
-  IgnoreHandOffset:
-    UseConstant: 1
-    ConstantValue: 0
-    Variable: {fileID: 0}
-  m_IgnoreDraw:
-    UseConstant: 1
-    ConstantValue: 0
-    Variable: {fileID: 0}
-  m_IgnoreStore:
-    UseConstant: 1
-    ConstantValue: 0
-    Variable: {fileID: 0}
-  DisableModes: []
-  ExitOnModes: []
-  DisableStates: []
-  ExitOnState: []
-  ExitFast: 0
-  StoreSelfHolster: 0
-  UseExternal: 0
-  InstantiateOnEquip: 1
-  DestroyOnUnequip: 0
-  UseHolsters: 1
-  holsters:
-  - ID: {fileID: 11400000, guid: 8be06e7fc27c57c4e82d4a5cafd76296, type: 2}
-    Index: 0
-    Slots:
-    - {fileID: 5828222252134321682}
-    Weapon: {fileID: 0}
-    Input:
-      UseConstant: 1
-      ConstantValue: 
-      Variable: {fileID: 0}
-    AutoEquip:
-      UseConstant: 1
-      ConstantValue: 0
-      Variable: {fileID: 0}
-    OnWeaponInHolster:
-      m_PersistentCalls:
-        m_Calls: []
-  HolsterTime: 0.2
-  LeftHandEquipPoint: {fileID: 960635512092212282}
-  RightHandEquipPoint: {fileID: 5682721349016540721}
-  m_CombatLayerPath: Layers/Combat2
-  m_CombatLayerName: Upper Body (AC Weapons)
-  debug: 0
-  anim: {fileID: 0}
-  StoreAfter:
-    UseConstant: 1
-    ConstantValue: 0
-    Variable: {fileID: 0}
-  m_WeaponType: WeaponType
-  m_IKAim: IKAim
-  m_IKFreeHand: IKFreeHand
-  m_LeftHand: LeftHand
-  m_WeaponPower: ModePower
-  m_ModeOn: ModeOn
-  m_Mode: Mode
-  Hash_IKFreeHand: 0
-  Hash_IKAim: 0
-  OnCombatMode:
-    m_PersistentCalls:
-      m_Calls: []
-  OnCanAim:
-    m_PersistentCalls:
-      m_Calls: []
-  OnEquipWeapon:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: eca4f98ae1362694f9a61cf46335a2d1, type: 2}
-        m_TargetAssemblyTypeName: MalbersAnimations.Events.MEvent, MalbersAnimations
-        m_MethodName: Invoke
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnUnequipWeapon:
-    m_PersistentCalls:
-      m_Calls: []
-  OnWeaponAction:
-    m_PersistentCalls:
-      m_Calls: []
-  m_AimInput:
-    UseConstant: 1
-    ConstantValue: Aim
-    Variable: {fileID: 0}
-  m_ReloadInput:
-    UseConstant: 1
-    ConstantValue: Reload
-    Variable: {fileID: 0}
-  m_MainAttack:
-    UseConstant: 1
-    ConstantValue: MainAttack
-    Variable: {fileID: 0}
-  m_SecondAttack:
-    UseConstant: 1
-    ConstantValue: SecondAttack
-    Variable: {fileID: 0}
-  m_SpecialAttack:
-    UseConstant: 1
-    ConstantValue: SpecialAttack
-    Variable: {fileID: 0}
-  DestroyOnDrop: 0
-  startWeapon:
-    UseConstant: 1
-    ConstantValue: {fileID: 849058585}
-    Variable: {fileID: 0}
-  aim:
-    UseConstant: 1
-    ConstantValue: 0
-    Variable: {fileID: 0}
-  Editor_Tabs1: 0
-  Editor_Tabs2: 5
+  mainCamera: {fileID: 611510670}
+  normalFOV: 60
+  zoomFOV: 30
+  zoomSpeed: 10
+  crosshair: {fileID: 662972773}
 --- !u!1 &6605699942139822840
 GameObject:
   m_ObjectHideFlags: 0
@@ -18545,7 +17843,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3681436477360236824, guid: 278a8ab383c77424c8f1a3603f870a5b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4061339028103410594, guid: 278a8ab383c77424c8f1a3603f870a5b, type: 3}
       propertyPath: m_RootOrder
@@ -18592,9 +17890,25 @@ PrefabInstance:
       value: -71.535
       objectReference: {fileID: 0}
     - target: {fileID: 7159403673819949085, guid: 278a8ab383c77424c8f1a3603f870a5b, type: 3}
+      propertyPath: crosshair
+      value: 
+      objectReference: {fileID: 662972774}
+    - target: {fileID: 7159403673819949085, guid: 278a8ab383c77424c8f1a3603f870a5b, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 611510670}
+    - target: {fileID: 7159403673819949085, guid: 278a8ab383c77424c8f1a3603f870a5b, type: 3}
+      propertyPath: shootForce
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7159403673819949085, guid: 278a8ab383c77424c8f1a3603f870a5b, type: 3}
       propertyPath: spawnBullet
       value: 
       objectReference: {fileID: 1235266079}
+    - target: {fileID: 7159403673819949085, guid: 278a8ab383c77424c8f1a3603f870a5b, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 6750900059882291886, guid: fafb88e68b40b7742b6f7a2952a0cde3, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 278a8ab383c77424c8f1a3603f870a5b, type: 3}
 --- !u!4 &7179019363688484662

@@ -15,15 +15,15 @@ public class BulletProjectile : MonoBehaviour
         bulletRigidbody = GetComponent<Rigidbody>();
     }
 
-    private void Start()
+   /* private void Start()
     {
         float speed = 50f;
         bulletRigidbody.velocity = transform.forward * speed;
-    }
+    }*/
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<BulletTarget>() != null)
+        if (other.CompareTag("Enemy"))
         {
             // Hit target
             Instantiate(HitRed, transform.position, Quaternion.identity);
@@ -33,7 +33,8 @@ public class BulletProjectile : MonoBehaviour
             // Hit something else
             Instantiate(HitGreen, transform.position, Quaternion.identity);
         }
-        Destroy(gameObject);
+       // Destroy(gameObject);
+       gameObject.SetActive(false);
     }
 
 }

@@ -11,6 +11,8 @@ TagManager:
   - CinemachineTarget
   - Bullet
   - Animal
+  - Water
+  - Enemy
   layers:
   - Default
   - TransparentFX
